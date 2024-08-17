@@ -1,2 +1,5 @@
-# fyne-pacbiohifi
-a fyne application for pacbiohifi genome analysis
+# genomeprofiler-fyne
+
+- a fyne go application for genome profile and profiles all genomes
+
+Gaurav Sablok
