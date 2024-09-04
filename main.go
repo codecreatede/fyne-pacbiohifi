@@ -41,7 +41,7 @@ func main() {
 		}))
 	windowapp.SetContent(content)
 	}))
-        readbuffer := bufio.NewScanner(readfile)
+  readbuffer := bufio.NewScanner(input.Text)
 	header := []string{}
 	sequences := []string{}
 	header := []string{}
@@ -85,4 +85,5 @@ func main() {
 	func saveFile (uri fyne.URI) (fyne.URIWriteCloser, error) {
 	return fyne.CurrentApp().Driver().FileWriteForURI(uri)
 	}
+	windowapp.ShowAndRun()
 }
