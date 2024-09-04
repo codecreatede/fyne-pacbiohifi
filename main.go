@@ -70,7 +70,7 @@ func main() {
 		}
 	values, err := charts.LineRender(
 		seqCount,
-		charts.TitleTextOptionFunc("Line")
+		charts.TitleTextOptionFunc("Line"),
 		charts.XAxisDataOptionFunc(seqHeaders)
 	),
         charts.LegendLabelOptionFunc([]string{
@@ -79,11 +79,10 @@ func main() {
         }, charts.PositionCenter),
 	),
 	if err != nil {
-		panic(err)
     	log.Fatal(err)
 	}
   // saving the file after reading it.
 	func saveFile (uri fyne.URI) (fyne.URIWriteCloser, error) {
 	return fyne.CurrentApp().Driver().FileWriteForURI(uri)
 	}
-	}
+}
