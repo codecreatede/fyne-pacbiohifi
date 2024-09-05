@@ -68,7 +68,7 @@ func main() {
 	for i := range  seqgcCount {
 			seqplot = append(seqplot, int(seqgcCount[i])/int(seqCount[i]))
 		}
-	values, err := charts.LineRender(
+		values, err := charts.LineRender(
 		seqCount,
 		charts.TitleTextOptionFunc("Line"),
 		charts.XAxisDataOptionFunc(seqHeaders)
